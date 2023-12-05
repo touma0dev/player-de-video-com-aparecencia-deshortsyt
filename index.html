@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dark-theme>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>YT - Shorts </title>
+</head>
+
+<body>
+    <main dark-theme>
+        <div class="container">
+            <video >
+                <source url="">
+            </video>
+            <div class="container-top">
+                <section>
+                    <p>Shorts</p>
+                    <button>
+                        <img src="./assets/search.svg" alt="search">
+                    </button>
+                    <button>
+                        <img src="./assets/dots.svg" alt="dots">
+                    </button>
+                </section>
+                <section class="">
+                    <!-- <button>
+                        <img src="./assets/Rss.svg" alt="rss">
+
+                        Inscrições
+
+                    </button>
+                    <button>
+                        <img src="./assets/live.svg" alt="live">
+                        Live
+                    </button> -->
+                </section>
+            </div>
+                <div class="container-right">
+                <section>
+                    <button>
+                        <img src="./assets/like.svg" alt="like">
+                        Gostei
+
+                    </button>
+                    <button>
+                        <img src="./assets/like.svg" alt="dislike">
+                        1B
+
+                    </button>
+                    <button>
+                        <img src="./assets/comments.svg" alt="comments">
+                        999+
+                    </button>
+                    <button>
+                        <img src="./assets/share.svg" alt="share">
+                        Link
+                    </button>
+                    <button>
+                        <img src="./assets/remix.svg" alt="remix">
+                        Remix
+                    </button>
+                    <button >
+                        <img src="./assets/rock.svg" alt="rock">
+                    </button>
+                </section>
+            </div>
+            <div class="container-bottom">
+                <section>
+                    <b>
+                       <span>
+                        <button>
+                            <img src="./assets/channels1_profile.jpg" alt="username">
+                        </button>
+                       </span>
+                       <span>
+                        <h1>@tiktokshorts</h1>
+
+                       </span>
+                       <span>
+                        <button>
+                            Seguir
+                        </button>
+                       </span>
+                    </b>
+                    
+                    <p>
+                        Saiba Agora Sobre O YouTube Shorts - TikTok Streaming
+                    </p>
+                </section>
+                <section>
+                   <span>
+                    <button>
+                        <img src="./assets/song.svg" alt="song">
+                        
+                    </button>
+                    <p>
+                        Top - Melhores do Xamuel PlayList Pancadão .
+                    </p>
+                   </span>
+                </section>
+            </div>
+        </div>
+    </main>
+ 
+    <script>
+        var meuVideo = document.querySelector('video');
+        let istrue=false;
+        meuVideo.addEventListener('click',function(){
+            istrue=!istrue;
+            if (istrue) {
+                console.log('Reproduzindo vídeo');
+                meuVideo.play();
+              } else {
+                console.log('Pausando vídeo');
+                meuVideo.pause();
+              }
+        })
+        
+          // Defina o src do vídeo
+          meuVideo.src = 'assets/windherssonsample.mp4';
+     
+    </script>
+</body>
+
+</html>

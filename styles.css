@@ -1,0 +1,216 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html[dark-theme]{
+  --color: #f1f1f1;
+  --backgroud-color-white-like: #e1e1e1;
+  --background-color: #0f0f0f;  
+  --background-color-white:#f5f5f505;
+  --background-color-red:#db1717;
+  font-family: "Roboto","Arial",sans-serif;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: 400;
+  white-space: normal;
+  pointer-events: auto;
+}
+
+button,input[type='text']{
+    outline: none;
+    background-color: transparent;
+    border: none;
+    color: var(--color);
+
+}
+body,main,header{
+    background-color:  #0f0f0f;
+
+}
+.container{
+ margin: 0 auto;
+ align-items: center;
+ justify-content: center;
+ position: relative;   
+ width: 270px;
+ height: 480px;
+ border-radius: 5%;
+ background-color: var(--background-color);
+ color: var(--color);
+ overflow: hidden;
+}
+.container video{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+.container-top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.container-top section{
+    display: flex;
+    gap: 5pt;
+    margin: 5pt 5pt;
+}
+.container-top section button{
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-content: center;
+    cursor: pointer;
+}
+.container-top section button img{
+    width: 40px;
+
+} 
+.container-top section:nth-child(1){
+    justify-content: left;
+}
+.container-top section:nth-child(1) p{
+    width: 300px;
+    display:grid;
+    justify-content: left;
+    align-content: center;
+    margin: 5pt 5pt;
+
+}
+.container-top section:nth-child(2) button{
+    border-radius:24px;
+    height: 45px;
+    background-color: var(--background-color-white);
+    padding: 5px 7px;
+    margin: 0px 1pt ;
+}  
+.container-right{   
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+}
+.container-right section{
+    display: flex;
+    flex-direction: column;
+    gap: 4.5pt;
+    margin: 20pt 1pt;
+}
+.container-right section button{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 8pt;
+    padding: 3pt 3pt;
+    text-align: center;
+    border: 1px solid transparent;
+    color: var(--backgroud-color-white-like);
+    border-radius: 50px;
+}
+.container-right section button img{
+    width: 25px;
+}
+.container-right section button:nth-child(1) img{
+    transform:  rotate(190deg);
+}
+
+.container-bottom{
+    position: absolute;
+    width:250px;
+    height: 150px;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+}
+.container-bottom section{
+    max-width: 228px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    position: relative;
+}
+.container-bottom section b{
+    display: flex;
+    justify-content: left  ;
+    align-items: center;
+    align-content: center;
+    gap: 5pt;
+    margin: 5pt;
+    
+}
+.container-bottom section b span:nth-child(1){
+    max-height: 50px;
+    max-width: 50px;
+}
+.container-bottom section b span img{
+    width:100%;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.container-bottom section b span:nth-child(2) h1{
+    font-size: 11pt;
+    line-height:3em;
+    text-align: center;
+}
+.container-bottom section b span:nth-child(3){
+    font-size: 12pt;
+    line-height:3em;
+    text-align: center;
+}
+.container-bottom section b span:nth-child(3) button{
+    background-color: var(--background-color-red);
+    padding: 5px 5px;
+    border-radius: 2px;
+}
+.container-bottom section p{
+    font-size: 11pt;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+    max-width:250px; 
+    margin: 0 auto;
+    align-items: center;
+    align-content: center;
+    line-height: 1.5em;
+    margin: 0 13px;
+    text-indent: pre;
+
+}
+.container-bottom section:nth-child(2) span{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+
+}
+.container-bottom section:nth-child(2) span button img{
+    width: 35px;
+}
+.container-bottom section:nth-child(2) span p{
+    font-size: 9pt;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+    max-width:150px; 
+    white-space:unset;
+    margin: 0 auto;
+    align-items: center;
+    align-content: center;
+    line-height: 1em;
+    margin: 0 13px;
+    text-indent: pre;  
+    font-weight: 600;
+}
